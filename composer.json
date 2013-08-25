@@ -3,7 +3,7 @@
 	"type": "library",
 	"description": "Link header (RFC 5988) parser",
 	"keywords": ["http"],
-	"homepage": "https://github.com/phpish/http",
+	"homepage": "https://github.com/phpish/link_header",
 	"license": "MIT",
 	"authors": [
 		{
