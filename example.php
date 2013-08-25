@@ -96,7 +96,7 @@
 		*/
 
 
-	// Header values can also be passed as an array. If there are repeated rels (like previous in the examples below) only the last one will be retained.
+	// Header values can also be passed as an array:
 	print_r(link_header\parse(array(
 		'<http://example.com/TheBook/chapter2>; rel="previous"; title="previous chapter"',
 		'</>; rel="http://example.net/foo"',
