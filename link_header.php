@@ -81,14 +81,22 @@
 					case 'end_of_params':
 						$state = 'link_start';
 						$link[$param_name] = $param_value;
-						if (isset($link['rel'])) foreach (explode(' ', $link['rel']) as $rel) $links[$rel] = $link;
+						if (isset($link['rel'])) {
+							$rels = $link['rel'];
+							unset($link['rel']);
+							foreach (explode(' ', $rels) as $rel) $links[$rel][] = $link;
+						}
 						else $links[] = $link;
 				}
 			}
 
 			if ('link_start' != $state) {
 				$link[$param_name] = $param_value;
-				if (isset($link['rel'])) foreach (explode(' ', $link['rel']) as $rel) $links[$rel] = $link;
+				if (isset($link['rel'])) {
+					$rels = $link['rel'];
+					unset($link['rel']);
+					foreach (explode(' ', $rels) as $rel) $links[$rel][] = $link;
+				}
 				else $links[] = $link;
 
 			}

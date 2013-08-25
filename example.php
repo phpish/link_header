@@ -13,9 +13,12 @@
 		(
 			[previous] => Array
 				(
-					[uri] => http://example.com/TheBook/chapter2
-					[rel] => previous
-					[title] => previous chapter
+					[0] => Array
+						(
+							[uri] => http://example.com/TheBook/chapter2
+							[title] => previous chapter
+						)
+
 				)
 
 		)
@@ -28,8 +31,11 @@
 		(
 			[http://example.net/foo] => Array
 				(
-					[uri] => /
-					[rel] => http://example.net/foo
+					[0] => Array
+						(
+							[uri] => /
+						)
+
 				)
 
 		)
@@ -42,16 +48,22 @@
 		(
 			[previous] => Array
 				(
-					[uri] => /TheBook/chapter2
-					[rel] => previous
-					[title*] => TF-8'de'letztes%20Kapitel
+					[0] => Array
+						(
+							[uri] => /TheBook/chapter2
+							[title*] => TF-8'de'letztes%20Kapitel
+						)
+
 				)
 
 			[next] => Array
 				(
-					[uri] => /TheBook/chapter4
-					[rel] => next
-					[title*] => TF-8'de'n%c3%a4chstes%20Kapitel
+					[0] => Array
+						(
+							[uri] => /TheBook/chapter4
+							[title*] => TF-8'de'n%c3%a4chstes%20Kapitel
+						)
+
 				)
 
 		)
@@ -64,14 +76,20 @@
 		(
 			[start] => Array
 				(
-					[uri] => http://example.org/
-					[rel] => start http://example.net/relation/other
+					[0] => Array
+						(
+							[uri] => http://example.org/
+						)
+
 				)
 
 			[http://example.net/relation/other] => Array
 				(
-					[uri] => http://example.org/
-					[rel] => start http://example.net/relation/other
+					[0] => Array
+						(
+							[uri] => http://example.org/
+						)
+
 				)
 
 		)
@@ -91,34 +109,55 @@
 		(
 			[previous] => Array
 				(
-					[uri] => /TheBook/chapter2
-					[rel] => previous
-					[title*] => TF-8'de'letztes%20Kapitel
+					[0] => Array
+						(
+							[uri] => http://example.com/TheBook/chapter2
+							[title] => previous chapter
+						)
+
+					[1] => Array
+						(
+							[uri] => /TheBook/chapter2
+							[title*] => TF-8'de'letztes%20Kapitel
+						)
+
 				)
 
 			[http://example.net/foo] => Array
 				(
-					[uri] => /
-					[rel] => http://example.net/foo
+					[0] => Array
+						(
+							[uri] => /
+						)
+
 				)
 
 			[next] => Array
 				(
-					[uri] => /TheBook/chapter4
-					[rel] => next
-					[title*] => TF-8'de'n%c3%a4chstes%20Kapitel
+					[0] => Array
+						(
+							[uri] => /TheBook/chapter4
+							[title*] => TF-8'de'n%c3%a4chstes%20Kapitel
+						)
+
 				)
 
 			[start] => Array
 				(
-					[uri] => http://example.org/
-					[rel] => start http://example.net/relation/other
+					[0] => Array
+						(
+							[uri] => http://example.org/
+						)
+
 				)
 
 			[http://example.net/relation/other] => Array
 				(
-					[uri] => http://example.org/
-					[rel] => start http://example.net/relation/other
+					[0] => Array
+						(
+							[uri] => http://example.org/
+						)
+
 				)
 
 		)
@@ -133,9 +172,12 @@
 		(
 			[previous] => Array
 				(
-					[uri] => http://example.com/TheBook/chapter1
-					[rel] => previous
-					[title] => start, index
+					[0] => Array
+						(
+							[uri] => http://example.com/TheBook/chapter1
+							[title] => start, index
+						)
+
 				)
 
 		)
